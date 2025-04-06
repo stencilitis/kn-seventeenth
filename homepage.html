@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="cinnamoroll-theme">
+
+<audio controls loop>
+  <source src="gingersweet.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.close-btn').addEventListener('click', function() {
+        const notification = document.querySelector('.notification');
+        notification.style.opacity = '0';
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 300);
+      });
+    }
+  </script>
+  <script>
+  function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('sparkle');
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    star.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+      star.remove();
+    }, 5000);
+  }
+
+  setInterval(createStar, 300);
+</script>
+
+
+<div class="floating-cinnas">
+  <img src="balloons.gif" class="cinnaparticle" />
+  <img src="cinnaheart.gif" class="cinnaparticle" />
+</div>
+
+
+  <!-- Notification Banner -->
+  <div class="notification">
+    <img src="cinnamaca.png" alt="icon" class="icon" />
+    <span>Happy Birthday!</span>
+    <button class="close-btn">&times;</button>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>🎀 Happy Birthday, KN! 🎀</h1>
+      <p class="subtext">Cinnamonroll wants to send a message~ 💌</p>
+    </header>
+
+    <section class="message">
+      <p>Kurt Neithan B. Tolentino 🧸</p>
+      <p>Panis full name, kabahan ka na. Charez lang.</p>
+      <p>
+        Una sa lahat, happy birthday! Can't believe 17 ka na, parang pushing 40 ka na kase. Honestly, I'm trying to mask the awkwardness
+        with jokes and all, halata naman. I kept thinking if i'd actually greet you on your birthday, 'di ko kasi alam how you'd take it.
+        Baka pagisipan mo ng masama, and I totally understand if so. Sino ba naman kaseng tanga ang babati sa ex niya ket tagal na nilang wala.
+        Clue letter K. Eme,, I just thought I'd still greet. May pinagsamahan pa rin naman tayo despite everything that happened. And no, this isn't
+        to hit up on you or bring chaos back in your life, it's just a simple greeting so please, take it as it is. I'm proud, and always will be,
+        of how much you've grown as a person. I'm pretty sure, even if we don't talk anymore or even if I don't look at your posts or updates 
+        anymore, na you've changed for the better. You're still you, just better. Barzz. I still think about what we had from time to time,
+        I'm thankful because without you as an experience, I wouldn't be who I am now. I feel like I've still got a lot to say, but sometimes things are
+        better left unsaid right? Was it hard for you too? Or was it as easy to ignore like how you would always push your problems away? All I could
+        wish for your birthday is for you to find peace. In yourself, in relationships, in family, in everything you love. Sana makamit mo mga pangarap mo
+        at sana mag-excel ka pa lalo. I wish you success Kurt.
+      </p>
+      <p>
+        As you can see, dami ko pa ring nasabi, makata pa rin until neow. I couldn't give you something big so like I did a year ago, here's another website.
+        Eto naman, made from scratch. Hays buti na lang may natututunan rin naman ako sa course ko. Thought I'd make it cinnamonroll theme since you like that
+        character. ☁️
+      </p>
+
+      <!-- Batz Maru Quote -->
+      <div class="center-container">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div class="circle-image">
+            <img src="batz.png" alt="Batz Maru">
+          </div>
+          <div class="message">
+            <p>Batz maru still the best tho 👻</p>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        You're loved, appreciated, and will always be in our hearts 🌸. Let's make this year your best one yet ✨.
+      </p>
+      <p class="signature">The best ex, <br /> Martin 💌 </p>
+    </section>
+
+    <section class="characters">
+      <h2>Your Sanrio Friends 🎪</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="hugcina.gif" alt="Cinnamoroll" />
+          <p>Cinnamoroll sends fluffy hugs ☁️💙</p>
+        </div>
+        <div class="card">
+          <img src="kittywish.gif" alt="Hello Kitty" />
+          <p>Hello Kitty sends birthday wishes 🎉</p>
+        </div>
+        <div class="card">
+          <img src="meloeat.gif" alt="My Melody" />
+          <p>My Melody ate the strawberries off your cake, she knows you don't like them! 🍰</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gif-gallery">
+      <h2>🎉 Sanrio Celebration Zone 🎉</h2>
+      <div class="gif-grid">
+        <img src="flying.gif" alt="Cinnamoroll flying" />
+        <img src="balloons.gif" alt="Balloon celebration" />
+        <img src="cinnaheart.gif" alt="Cute hearts" />
+        <img src="sanrio.gif" alt="Sanrio party" />
+        <img src="butt.gif" alt="Cinnamoroll smile" />
+        <img src="melochum.gif" alt="Floating hearts" />
+      </div>
+    </section>
+  </div>
+
+<div class="chatbox">
+  <img src="icon.png" alt="Cinnamoroll" />
+  <div class="chattext">Happy B-day, KN! 💌</div>
+</div>
+
+<!-- END OF BODY CONTENT -->
+<script>
+  document.querySelector('.close-btn').addEventListener('click', function () {
+    const notification = document.querySelector('.notification');
+    notification.style.opacity = '0';
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 300);
+  });
+</script>
+
+
+
+</body>
+</html>
